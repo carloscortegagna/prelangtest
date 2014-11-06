@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :posts
+
   resources :tags
 
   devise_for :admin_users, ActiveAdmin::Devise.config
